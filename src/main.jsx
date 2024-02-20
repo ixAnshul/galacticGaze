@@ -6,8 +6,9 @@ import App from './app.jsx';
 import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <BrowserRouter>
+  // <React>
+    <App/>
+    /* <BrowserRouter>
       <ul className='hidden'>
         <li>
           <NavLink to='/basic-image'>/basic-image</NavLink>
@@ -32,6 +33,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         </li>
       </ul>
       <App />
-    </BrowserRouter>
-  </React.StrictMode>
+    </BrowserRouter> */
+  /* </React> */
 );

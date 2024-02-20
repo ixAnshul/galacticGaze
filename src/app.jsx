@@ -9,24 +9,21 @@ import HTMLMarker from './routes/html-marker';
 import CustomLayer from './routes/custom-layer';
 
 import NotFound from './routes/not-found';
+import EarthGlobe from './components/EarthGlobe';
+import Home from './components/Home';
+// import { Navbaar } from './components/Navbaar';
+import APOD from './components/APOD';
+import { Navbaar } from './components/Navbaar';
 
 const App = () => {
   return (
-    <main>
-      <Routes>
-        <Route path='/'>
-          <Route index element={<Finished />} />
-          <Route path='basic-image' element={<BasicImage />} />
-          <Route path='geojson-polygon' element={<GeojsonPolygon />} />
-          <Route path='geojson-hexagon' element={<GeojsonHexagon />} />
-          <Route path='arcs-data' element={<ArcsData />} />
-          <Route path='rings-data' element={<RingsData />} />
-          <Route path='html-marker' element={<HTMLMarker />} />
-          <Route path='custom-layer' element={<CustomLayer />} />
-          <Route path='*' element={<NotFound />} />
-        </Route>
-      </Routes>
-    </main>
+    <>
+    {/* <Navbar/> */}
+    <Navbaar/>
+    <Home/>
+    <APOD/>
+    {/* <EarthGlobe e1={<RingsData/>}/> */}
+    </>
   );
 };
 
